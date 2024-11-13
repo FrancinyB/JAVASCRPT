@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> integrity="sha384"
+    <style type="text/css">
+        .btn-calc {
+            padding: 20px; 0px;
+    
+        }
+    </style>
+    </head>
+<body>
+
+<script type="text/JavaScript">
+
+var resetarVisor=false;
+const divContainer = document.createElement("div");
+    
+    divContainer.classList.add('container');
+    divContainer.classList.add('bg-secundary');
+    divContainer.classList.add('col-4');
+
+
+    const title = document.creatElement('h1');
+    title.innnerHTML = "Calculadora";
+    title.classList.add('text-center');
+    title.classList.add('text-light');
+    divContainer.append(title);
+
+
+    var divInputResultado = document.createElement ("div");
+    divInputResultado.classList.add('row');
+    divInputResultado.classList.add('justify-content-center');
+
+    var divInputResultado = document.createElement ("input");
+    inputResultado.id = "visor";
+    divInputResultado.placeholder = "0";
+    inputResultado.classList.add('form-control');
+    inputResultado.disabled = true;
+    divInputResultado.append(inputResultado);
+    divContainer.appendChild(divInputResultado);
+    document.body.append(divContainer);
+
+    var divPrimeiraLinha = document.createElement('div');
+    divPrimeiraLinha.classList.add('row');
+    divPrimeiraLinha.classList.add('justify-content-center');
+
+    var buttonC = document.createElement('button');
+    buttonC.classList.add('btn');
+    buttonC.classList.add('btn-dark');
+    buttonC.classList.add('btn-Ig');
+    buttonC.classList.add('font-weight-light');
+    buttonC.classList.add('border');
+    buttonC.classList.add('border-light');
+    buttonC.classList.add('btn-calc');
+    buttonC.classList.add('col-6');
+    buttonC.innerHTML = "C";
+    divPrimeiraLinha.append(buttonC);
+    
+
+    var buttonDivider = document.createElement('button');
+    buttonDivider.classList.add('btn');
+    buttonDivider.classList.add('btn-dark');
+    buttonDivider.classList.add('btn-Ig');
+    buttonDivider.classList.add('font-weight-light');
+    buttonDivider.classList.add('border');
+    buttonDivider.classList.add('border-light');
+    buttonDivider.classList.add('btn-calc');
+    buttonDivider.classList.add('col-3');
+    buttonDivider.innerHTML = "/";
+    divPrimeiraLinha.append(buttonDivider);
+
+    var buttonMulti = document.createElement('button');
+    buttonMulti.classList.add('btn');
+    buttonMulti.classList.add('btn-dark');
+    buttonMulti.classList.add('btn-Ig');
+    buttonMulti.classList.add('font-weight-light');
+    buttonMulti.classList.add('border');
+    buttonMulti.classList.add('border-light');
+    buttonMulti.classList.add('btn-calc');
+    buttonMulti.classList.add('col-3');
+    buttonMulti.innerHTML = "X";
+    divPrimeiraLinha.append(buttonMulti);
+
+    divContainer.append(divPrimeiraLinha);
+
+    
+
+
+
+</script>
+
+</body>
+
+</head>
+
+</html>
